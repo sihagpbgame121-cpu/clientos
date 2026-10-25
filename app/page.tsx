@@ -172,7 +172,7 @@ export default function Home() {
                   <ul className="mt-6 flex-1 space-y-3 text-sm text-zinc-300">
                     {(items as string[]).map((x) => <li key={x} className="flex items-center gap-2"><Check size={16} className="text-indigo-300" />{x}</li>)}
                   </ul>
-                  <Link href="/signup" className={`${hot ? primary : ghost} mt-8`}>Start Free</Link>
+                  <Link href="/signup" className={`${hot ? primary : ghost} mt-8`}>{hot ? "Try Pro free (beta)" : "Start Free"}</Link>
                 </div>
               </Reveal>
             ))}
